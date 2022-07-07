@@ -1,0 +1,127 @@
+body {
+    font-family:'Gulzar', serif;
+    background-color: antiquewhite;
+    font-size: 16px;
+    line-height: 1.6;
+    color: rgb(44, 38, 38);
+    scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.container {
+    width: 1920px;
+    max-width: 100%;
+}
+/* Header */
+/*.header::before {
+    content: "";
+    position:absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: rgb(150, 44, 150);
+    z-index: 1;
+  } */
+  .header {
+    padding-top: 30px;
+    padding-left: 40px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+.header__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__logo img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Navigation */
+.nav {
+    font-size: 19px;
+    text-transform: uppercase;
+    
+}
+.nav__link{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 30px;
+    color: rgb(22, 21, 21);
+    text-decoration: none;
+    position: relative;
+    transition: color 0.2s linear;
+}
+.nav__link:hover{
+    color: rgb(233, 94, 14);
+}
+
+.nav__link:after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    display: none;
+    background-color: rgb(233, 94, 14);
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    position: absolute;
+}
+.nav__link:hover:after{
+    display: block;
+}
+
+/* Intro */
+
+.intro__title{
+    font-size: 75px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 50px;
+    line-height: 2;
+}
+
+.intro__inner{
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.intro__title::after{
+    content: "";
+    display: block;
+    width: 600px;
+    height: 3px;
+    background-color: black;
+    margin: -30px auto 0;
+}
+
+/* Main */
+.main{
+    padding: 20px 0;
+}
+.main__header{
+    width: 100%;
+    max-width: 950px;
+    margin: 0 auto 40px;
+    text-align:justify;
+}
+.main__title{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 60px;
+}
