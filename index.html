@@ -20,13 +20,13 @@
 
 
                 <nav class="nav"> 
-                    <a class="nav__link" href="#contact">Contact</a>
-                    <a class="nav__link" href="#">About</a>
-                    <a class="nav__link" href="#">Skills</a>
-                    <a class="nav__link" href="#">Code Example</a>
-                    <a class="nav__link" href="#">Education</a>
-                    <a class="nav__link" href="#">Experience</a>
-                    <a class="nav__link" href="#">English</a>
+                    <a class="nav__link" href="#con">Contact</a>
+                    <a class="nav__link" href="#sum">Summary</a>
+                    <a class="nav__link" href="#skill">Skills</a>
+                    <a class="nav__link" href="#cod">Code Example</a>
+                    <a class="nav__link" href="#ed">Education</a>
+                    <a class="nav__link" href="#ex">Experience</a>
+                    <a class="nav__link" href="#en">English</a>
                 </nav>
             </div>
         </div>
@@ -40,7 +40,7 @@
         </div>
     </div>
 
-<main class="main">
+<main class="main" id="con">
     <div class="container">
         <div class="main__header">
             <h2 class="main__title">Contact</h2>
@@ -58,7 +58,7 @@
         </div>
     </div>
 
-    <div class="main__header">
+    <section class="main__header" id="sum">
         <h2 class="main__title">Summary</h2>
         <div class="main__text">
             <p class="main__t">
@@ -66,7 +66,71 @@
             </p>
 
         </div>
+    </section>
+
+    <section class="main__header" id="skill">
+        <h2 class="main__title">Skills</h2>
+        <div class="main__text">
+            <ul class="main__list">
+                <li class="main__item">HTML</li>
+                <li class="main__item">CSS</li>
+                <li class="main__item">Version control with Git</li>
+                <li class="main__item">C++ (basics)</li>
+                <li class="main__item">Assembler (basics)</li>
+                <li class="main__item">Photoshop</li>
+                <li class="main__item">Blender</li>
+                <li class="main__item">After Effects and Premiere Pro (basics)</li>
+            </ul>
+        </div>
+    </section>   
+    
+    <section class="main__header" id="cod">
+        <h2 class="main__title">Code Example</h2>
+        <div class="code__text">
+            <pre class="code"> 
+                <code>
+                    <span class="cx">long reduction(long numerator, long denominator) {</span>
+                    <span class="cx">   long gcd = abs(denominator);</span>
+                    <span class="cx">   if (numerator >= 0){</span>
+                    <span class="cx">       numerator *= -1;</span>
+                    <span class="cx">   }</span>
+                    <span class="cx">   if (numerator > denominator){</span>
+                    <span class="cx">       while ((numerator % gcd != 0) || (denominator % gcd != 0)){</span>
+                    <span class="cx">           gcd--;</span>
+                    <span class="cx">       }</span>
+                    <span class="cx">   }</span>
+                    <span class="cx">   else{</span>
+                    <span class="cx">       gcd = 1;</span>
+                    <span class="cx">   }</span>
+                    <span class="cx">return gcd;</span>
+                </code>
+            </pre>
+        </div>
+    </section>
+
+    <section class="main__header" id="ed">
+        <h2 class="main__title">Education</h2>
+        <div class="main__e">
+                <p>Belarusian State University — Applied Informatics</p> 
+        </div>
+    </section>
+
+    <section class="main__header" id="ex">
+        <h2 class="main__title">Experience</h2>
+        <ul class="main__list">
+            <li class="main__item">
+                I have several projects on my <a href="https://github.com/SoTokcuk">GitHub</a>
+            </li>
+            <li class="main__item">Moreover, I have experience in creating promotional materials</li>
+        </ul>
+    </section>
+
+    <section class="main__header" id="en">
+        <h2 class="main__title">English</h2>
+        <div class="main__e">
+            <p>EPAM English test result: B1</p> 
     </div>
+    </section>
 
 </main>
 

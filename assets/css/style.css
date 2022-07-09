@@ -147,3 +147,14 @@ body {
     font-style: italic;
     font-size: 32px;
 }
+/*Code*/
+.code__text{
+    background-color: aliceblue;
+    margin-left: 50px;
+    margin-top: -30px;
+}
+.main__e{
+    font-size: 32px;
+    text-align: center;
+    margin-top: -30px;
+}
