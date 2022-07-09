@@ -158,3 +158,34 @@ body {
     text-align: center;
     margin-top: -30px;
 }
+/*Footer*/
+.footer{
+    width: 98%;
+    float: left;
+    padding: 1%;
+    background-color: rgb(175, 33, 80);
+    border-top: 2pc solid rgb(82, 26, 134);
+    margin-top: 10px;
+}
+.rights{
+    font-size: 22px;
+    text-align: right;
+}
+.rs{
+    margin-top: -30px;
+    font-size: 22px;
+    text-align: left;
+}
+.rs img{
+    width: 100px;
+    height: 100px;
+}
+.rs__text{
+    text-align: left;
+    margin-top: -40px;
+}
+.git{
+    text-align: center;
+    font-size: 22px;
+    margin-top: -125px;
+}
